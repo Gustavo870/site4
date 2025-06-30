@@ -32,6 +32,7 @@ body {
   color: white;
 }
 
+/* Botão de login/cadastro */
 .login-button {
   display: flex;
   align-items: center;
@@ -111,15 +112,6 @@ body {
   margin-bottom: 0.8rem;
 }
 
-.menu-grid a.menu-item {
-  text-decoration: none;
-  color: inherit;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 /* CORES DOS BLOCOS */
 .green { background-color: #2e4d2e; color: white; }
 .yellow { background-color: #ffe000; }
@@ -183,17 +175,66 @@ body {
   cursor: default;
 }
 
-/* ESTILO DA PÁGINA LOCALIZADOR */
+/* FORMULÁRIO */
+.form-container {
+  background-color: white;
+  max-width: 400px;
+  margin: 4rem auto;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  color: #2e4d2e;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #2e4d2e;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #2e4d2e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+  background-color: #3b663b;
+}
+
+/* LOCALIZADOR: imagem ocupa tela cheia */
 .mapa-container {
-  margin-top: 80px; /* compensa a navbar fixa */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: 80px; /* altura da navbar fixa */
+  height: calc(100vh - 80px); /* ocupa tela inteira menos navbar */
+  overflow: hidden;
 }
 
 .mapa-container img {
   width: 100%;
-  max-width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
