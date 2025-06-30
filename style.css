@@ -237,6 +237,4 @@ body {
 .mapa-container img {
   width: 10%;
   height: 10%;
-  object-fit: cover;
-  display: block;
 }
