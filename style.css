@@ -228,13 +228,18 @@ body {
 
 /* LOCALIZADOR: imagem ocupa tela cheia */
 .mapa-container {
-  margin-top: 80px; /* altura da navbar fixa */
-  height: 10%;
-  width: 10%;
+  margin-top: 80px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 
 .mapa-container img {
-  width: 10%;
-  height: 10%;
+  width: auto;
+  max-width: 100%;
+  height: 500px; /* você pode ajustar esse valor conforme preferir */
+  object-fit: contain;
+  display: block;
 }
