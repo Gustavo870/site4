@@ -229,7 +229,7 @@ body {
 /* LOCALIZADOR: imagem ocupa tela cheia */
 .mapa-container {
   margin-top: 80px; /* altura da navbar fixa */
-  height: calc(100vh - 80px); /* ocupa tela inteira menos navbar */
+  height: 10%
   width: 100vw;
   overflow: hidden;
 }
